@@ -1,3 +1,11 @@
+# Copyright (C) 2020-2021  The SymbiFlow Authors.
+# 
+# Use of this source code is governed by a ISC-style
+# license that can be found in the LICENSE file or at
+# https://opensource.org/licenses/ISC
+#
+# SPDX-License-Identifier: ISC
+
 
 # The top directory where environment will be created.
 TOP_DIR := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
@@ -16,7 +24,4 @@ include third_party/make-env/conda.mk
 test-command: | $(CONDA_ENV_PYTHON)
 	@$(IN_CONDA_ENV) echo "Python is $$(which python)"
 	@$(IN_CONDA_ENV) python --version
-
-
-
 

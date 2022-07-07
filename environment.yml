@@ -3,7 +3,6 @@ channels:
   - defaults
   - litex-hub
 dependencies:
-  - litex-hub::gcc-riscv32-elf-newlib
   - litex-hub::verilator
   - python=3.7
   - pip
