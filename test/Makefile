@@ -11,5 +11,10 @@ test:
 	verilator -cc add.v
 	make -C obj_dir -f Vadd.mk
 
+link:
+	verilator -cc add.v --exe tb.cpp
+	make -C obj_dir -f Vadd.mk
+
+
 clean:
 	/bin/rm -rf obj_dir
